@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Modal de Login -->
+    <button class="login" id="btn-login">Login</button>
+
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form class="contener-word" id="form-login">
+          <input class="word" type="email" id="email" placeholder="Email">
+          <input class="word" type="password" id="senha" placeholder="Senha">
+          <textarea class="word" cols="10" rows="4" maxlength="2000" name="Menssage" id="menssagem" placeholder="Descreva o serviço procurado:" required></textarea>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!--...................................................................................................................................-->
+     <!--Cadastro Concierge / Direcionando para o login-->
+     <button class="login-concierge" id="btn-cadastro">Cadastro Concierge</button>
+
+    <div id="modal-cadastro" class="modal-concierge">
+        <div class="modal-contener">
+            <span class="close-concierge">&times;</span>
+            <h2>Cadastro Concierge</h2>
+            <form class="formulario-cads" id="form-cadastro">
+                <input type="name" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="phone" id="contato" placeholder="Numero para contato" required>
+                <input type="city" id="cidade" placeholder="Cidade" required>
+                <input type="endereco" id="endereco" placeholder="endereco" required>
+                <input type="password" id="senha" placeholder="Senha" required> 
+                <button type="submit">Cadastrar</button> 
+
+            </form>
+        </div>
+    </div>
+
+
+    <!--...................................................................................................................................-->
+
+
+    <!--Cadastro Cliente / Direcionando para o login-->
+    <button id="btn-cadastro-cliente">Cadastre-se</button>
+
+    <div id="modal-cadastro-cliente" class="modal-clientes">
+        <div class="modal-content">
+            <span class="close-cliente">&times;</span>
+            <h2>Cadastro Cliente</h2>
+            <form id="form-cadastro">
+                <input type="name" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="phone" id="contato" placeholder="Numero para contato" required>
+                <input type="address" id="endereco" placeholder="Endereco" required>
+                <input type="city" id="cidade" placeholder="Cidade" required>
+                <input type="state" id="estado" placeholder="Estado" required>
+                <input type="password" id="senha" placeholder="Senha" required> 
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="form-login">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="senha" placeholder="Senha" required> 
+            <button type="submit">Entrar</button>
+        </form>
+        </div>
+    </div>
+     
+    <script src="app.js"></script>
+
+</body>
+</html>
